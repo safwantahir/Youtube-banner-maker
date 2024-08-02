@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:src="@drawable/banner"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/banner"
+    android:layout_marginTop="40dp"/>
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:src="@drawable/banner_text"
+        android:layout_below="@id/banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/txt"/>
+
+
+<ImageView
+    android:layout_width="250dp"
+    android:layout_height="100dp"
+    android:src="@drawable/start_btn"
+    android:id="@+id/start"
+    android:layout_above="@id/btns"
+    android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:id="@+id/btns">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:src="@drawable/rateus"
+            android:layout_marginRight="25dp"
+            android:id="@+id/rate"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:src="@drawable/share"
+            android:layout_marginRight="25dp"
+            android:id="@+id/share"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:src="@drawable/privacy"
+            android:layout_marginRight="15dp"
+            android:id="@+id/privacy"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
